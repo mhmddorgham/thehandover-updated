@@ -26,7 +26,7 @@ export function DevHeaderLg({ loading, session, status }: IHeaderProps) {
 
   return (
     <div
-      className={`w-full flex justify-between my-1 items-center  mx-auto py-3 px-2 container bg-white sticky top-0  `}
+      className={`w-full flex justify-between my-1 items-center  mx-auto py-3  bg-white sticky top-0  `}
     >
       <div>
         <Link href="/" className="header-links">

@@ -1,13 +1,18 @@
+import DevSidebar from "@/components/developer/shared/dev-sidebar";
 import DevHeader from "@/components/headers/dev-header/DevHeader";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex h-screen flex-col w-full ">
+    <main className="flex h-screen flex-col w-full container ">
       <DevHeader />
-      <main className="flex-1 bg-primary-50 bg-dotted-pattern ">
-        {children}
-      </main>
-    </div>
+      <section className="w-full h-full flex-1 grid md:grid-cols-[220px_1fr] lg:grid-cols-[250px_1fr] ">
+        <DevSidebar />
+        <main className="w-full h-full flex flex-col">
+          {children}
+          {/* <PromptAI /> */}
+        </main>
+      </section>
+    </main>
   );
 };
 

@@ -9,7 +9,7 @@ function DevHeader() {
   const { data: session, status } = useSession();
   const loading = status === "loading";
   return (
-    <main>
+    <section>
       <div className="hidden md:block bg-white">
         {/* large screen header  */}
 
@@ -19,7 +19,7 @@ function DevHeader() {
         {/* small screen header  */}
         <DevHeaderSm status={status} session={session} loading={loading} />
       </div>
-    </main>
+    </section>
   );
 }
 
