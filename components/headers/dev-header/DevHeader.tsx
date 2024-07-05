@@ -12,6 +12,7 @@ function DevHeader() {
     <main>
       <div className="hidden md:block bg-white">
         {/* large screen header  */}
+
         <DevHeaderLg status={status} session={session} loading={loading} />
       </div>
       <div className="block md:hidden">

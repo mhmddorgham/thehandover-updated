@@ -1,184 +1,53 @@
-// import React, { useMemo } from "react";
-// import Link from "next/link";
-// import { useRouter } from "next/navigation";
+"use client";
+// import PrimaryButton from "@/components/buttons/PrimaryButton";
+import Link from "next/link";
+import React from "react";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { Session } from "next-auth";
+import { IHeaderProps } from "@/types";
+import Image from "next/image";
 
-// import Image from "next/image";
-// import {
-//   Popover,
-//   PopoverContent,
-//   PopoverTrigger,
-// } from "@/components/ui/popover";
-// import { GiHamburgerMenu } from "react-icons/gi";
+function HeaderLg({ loading, session, status }: IHeaderProps) {
+  // get user id from data._id from mongodb
+  return (
+    <div className="w-full container flex justify-between items-center min-h-[5rem]">
+      <div className="flex items-center gap-2 font-bold text-2xl  text-pink-primary ">
+        <Image
+          src="/assets/icons/logo_v2.svg"
+          alt="StylishAI"
+          width={30}
+          height={30}
+        />
+        <p>StylishAI</p>
+      </div>
+      {!loading && (
+        <div className="flex justify-center items-center gap-6">
+          {status === "authenticated" ? (
+            <button className="text-pink-primary   border-b border-white  hover:border-pink-primary  px-4 py-3 duration-200 mr-4 ">
+              <Link href={`/dashboard`}>Dashboard</Link>
+            </button>
+          ) : (
+            <button className="text-pink-primary   border-b border-white  hover:border-pink-primary  px-4 py-3 duration-200 mr-4 ">
+              <Link href={`/sign-in`}>Login</Link>
+            </button>
+          )}
 
-// export default function HeaderLg() {
-//   const router = useRouter();
-//   const postButtonStlye =
-//     "tw-w-[150px] tw-rounded-full tw-border tw-outline-none tw-border-[#B9B9B9] tw-px-4 tw-text-[14px] tw-py-2   hover:tw-text-white tw-duration-150 hover:tw-border-[#5457D9] hover:!tw-bg-[#5457D9] hover:!tw-shadow-sm hover:!tw-shadow-primary-purple-color";
-//   const activeNav =
-//     "tw-border-b-2 tw-border-solid tw-border-[#797979]  tw-font-[600]";
+          {status === "authenticated" ? (
+            <button
+              onClick={() => signOut()}
+              className="bg-pink-primary rounded-2xl px-4 py-2 text-white hover:bg-pink-secondary hover:scale-105 duration-200  "
+            >
+              Sign Out
+            </button>
+          ) : (
+            <button className="bg-pink-primary rounded-2xl px-4 py-2 text-white hover:bg-pink-secondary hover:scale-105 duration-200  ">
+              <Link href={`/sign-up`}>Sign Up</Link>
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
 
-//   // const filteredLinks = useMemo(() => {
-//   //   return headerLinks.filter((link) => {
-//   //     if (isAuthenticated() && user?.userType.toLowerCase() === "developer") {
-//   //       return link.title !== "Marketplace";
-//   //     } else {
-//   //       return true;
-//   //     }
-//   //   });
-//   // }, [isAuthenticated, user?.userType]);
-
-//   // const handleSignout = () => {
-//   //   logout();
-//   //   router.push("/");
-//   // };
-
-//   return (
-//     <div
-//       className={`tw-w-full tw-flex tw-justify-between tw-items-center tw-max-w-[1310px] tw-mx-auto`}
-//     >
-//       <div>
-//         <Link href="/" className="header-links">
-//           <Image
-//             src="/Assets/icons/white-logo-3.svg"
-//             width={220}
-//             height={220}
-//             alt="logo"
-//           />
-//         </Link>
-//       </div>
-
-//       <div className="tw-flex tw-justify-center tw-items-center tw-gap-4">
-//         {filteredLinks &&
-//           filteredLinks.map((link, index) => {
-//             return (
-//               <Link
-//                 href={link.href}
-//                 key={index}
-//                 className={`mb-0 tw-mx-2  tw-text-[12px]  ${
-//                   link.href === router.pathname ? activeNav : ""
-//                 }`}
-//               >
-//                 {link.title}
-//               </Link>
-//             );
-//           })}
-//       </div>
-//       <div className="tw-flex tw-justify-end tw-items-center tw-pr-2 ">
-//         {isAuthenticated() ? (
-//           <div className="tw-flex tw-justify-end tw-items-center tw-pr-2">
-//             {user.userType.toLowerCase() === "developer" ? (
-//               <button
-//                 onClick={(e) => postListingFunction(e)}
-//                 className={`${postButtonStlye}`}
-//               >
-//                 Post a project
-//               </button>
-//             ) : null}
-//             <div>
-//               <Image
-//                 src="/Assets/icons/idle_bell.svg"
-//                 width={24}
-//                 height={24}
-//                 alt="bell"
-//                 className="tw-w-[20px] tw-h-[20px] tw-mx-5"
-//               />
-//             </div>
-
-//             <Popover>
-//               <PopoverTrigger>
-//                 {headerType === "supportHeader" ? (
-//                   <GiHamburgerMenu className="tw-w-[25px] tw-h-[25px] tw-min-h-[25px] tw-min-w-[25px] tw-text-white  " />
-//                 ) : (
-//                   <Image
-//                     className="tw-w-[25px] tw-h-[25px] "
-//                     width={25}
-//                     height={25}
-//                     alt="menu_icon"
-//                     src="/Assets/images/menu_img.png"
-//                   />
-//                 )}
-//               </PopoverTrigger>
-//               <PopoverContent className="tw-max-w-[220px] tw-flex tw-flex-col tw-gap-2 ">
-//                 {developerLinks &&
-//                   developerLinks.map((devLink, idx) => {
-//                     return (
-//                       <Link
-//                         key={idx}
-//                         href={`/${user.userType?.toLowerCase()}/${
-//                           devLink.href
-//                         }/${user?._id}`}
-//                         className="tw-text-[15px]  tw-text-black tw-px-0 tw-py-2 tw-text-center   tw-border-b tw-border-solid tw-duration-150 tw-border-white hover:tw-bg-gray-100 tw-w-full tw-pb-3"
-//                       >
-//                         {devLink.title}
-//                       </Link>
-//                     );
-//                   })}
-
-//                 <button
-//                   onClick={handleSignout}
-//                   className="tw-w-full tw-text-[12px]  tw-h-10 tw-rounded-md tw-text-white tw-bg-primary-purple-color tw-mt-3 "
-//                 >
-//                   Sign out
-//                 </button>
-//               </PopoverContent>
-//             </Popover>
-
-//             {/* <>
-//             <div
-//               ref={notificationRef}
-//               className={` tw-top-[72px]   tw-min-w-full tw-w-[600px] tw-absolute  tw-right  tw-z-[100] tw-duration-500 ${
-//                 showNotification ? "semi-sm:tw-block" : "tw-hidden"
-//               }`}
-//             >
-//               <Notifications
-//                 closeNotificationPanel={closeNotificationPanel}
-//                 ref={notificationRef}
-//                 className={"!tw-max-w-[700px]"}
-//               />
-//             </div>
-//           </> */}
-//           </div>
-//         ) : (
-//           <div className=" tw-flex tw-justify-end tw-items-center tw-pr-2">
-//             <button
-//               onClick={postListingFunction}
-//               className={`${postButtonStlye} tw-mr-9 `}
-//             >
-//               Post a project
-//             </button>
-
-//             <Popover>
-//               <PopoverTrigger>
-//                 {headerType === "supportHeader" ? (
-//                   <GiHamburgerMenu className="tw-w-[25px] tw-h-[25px] tw-min-h-[25px] tw-min-w-[25px] tw-text-white  " />
-//                 ) : (
-//                   <Image
-//                     className="tw-w-[25px] tw-h-[25px] "
-//                     width={25}
-//                     height={25}
-//                     alt="menu_icon"
-//                     src="/Assets/images/menu_img.png"
-//                   />
-//                 )}
-//               </PopoverTrigger>
-//               <PopoverContent className="tw-max-w-[220px] tw-flex tw-flex-col tw-gap-2 ">
-//                 <button
-//                   className="tw-w-full  tw-text-[15px] tw-z-[100]  tw-text-black tw-px-0 tw-py-2 tw-text-center   tw-border-b tw-border-solid tw-duration-150 tw-border-white hover: tw-pb-3  hover:tw-bg-gray-100 "
-//                   onClick={() => setModalShowSignIn(true)}
-//                 >
-//                   Sign In
-//                 </button>
-
-//                 <Link href="/sign-up">
-//                   <button className="tw-w-full  tw-text-[14px] tw-h-10 tw-rounded-md tw-text-white tw-bg-primary-purple-color hover:!tw-bg-primary-purple-dark hover:!tw-shadow-sm hover:!tw-shadow-primary-purple-color tw-duration-200 ">
-//                     Join Now
-//                   </button>
-//                 </Link>
-//               </PopoverContent>
-//             </Popover>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
+export default HeaderLg;

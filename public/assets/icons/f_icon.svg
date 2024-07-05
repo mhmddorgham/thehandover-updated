@@ -1,0 +1,61 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_126_830)">
+<g id="Group">
+<g id="Clip path group">
+<mask id="mask0_126_830" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17">
+<g id="a">
+<path id="Vector" d="M15.7906 15.7887V0.211885H0.21379V15.7887H15.7906Z" fill="white" stroke="white" stroke-width="0.423186"/>
+</g>
+</mask>
+<g mask="url(#mask0_126_830)">
+<g id="Group_2">
+<path id="Vector_2" d="M0.754534 15.7654H5.41389V13.1769C5.41389 11.7473 4.25499 10.5884 2.82537 10.5884H0.236816V15.2478C0.236816 15.5337 0.468597 15.7654 0.754534 15.7654Z" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M2.3147 6.44775H2.81623" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M1.78979 5.40985H2.81714" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M1.78979 7.4834H2.81714" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M2.3147 8.51685H2.81623" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M1.78979 9.55231H2.81714" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M2.3147 4.3764H2.81623" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M1.78979 3.34094H2.81714" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" d="M2.31714 2.30396H2.81867" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" d="M1.78979 1.26941H2.81714" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_12" d="M0.236816 2.87254V0.485167C0.236816 0.418864 0.263156 0.355275 0.31004 0.308391C0.356923 0.261507 0.420512 0.235168 0.486816 0.235168H2.57534C2.64164 0.235168 2.70523 0.261507 2.75212 0.308391C2.799 0.355275 2.82534 0.418864 2.82534 0.485167V10.5893H0.236816V3.81" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_13" d="M11.626 13.6874V13.1859" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_14" d="M10.5913 14.2136V13.1863" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_15" d="M12.6626 14.2136V13.1863" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_16" d="M13.6951 13.6874V13.1859" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_17" d="M14.7317 14.2136V13.1863" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_18" d="M9.55664 13.6874V13.1859" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_19" d="M8.52002 14.2136V13.1863" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_20" d="M7.48315 13.6874V13.1859" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_21" d="M6.44873 14.2136V13.1863" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_22" d="M15.5184 15.7654H5.41431V13.1769H15.5184C15.5847 13.1769 15.6483 13.2033 15.6952 13.2501C15.7421 13.297 15.7684 13.3606 15.7684 13.4269V15.5154C15.7684 15.5817 15.7421 15.6453 15.6952 15.6922C15.6483 15.7391 15.5847 15.7654 15.5184 15.7654Z" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_23" d="M3.34351 13.1764C3.34351 13.4623 3.11173 13.6941 2.82582 13.6941C2.53989 13.6941 2.30811 13.4623 2.30811 13.1764C2.30811 12.8905 2.53989 12.6587 2.82582 12.6587C3.11173 12.6587 3.34351 12.8905 3.34351 13.1764Z" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_24" d="M4.37769 13.1767C4.37769 14.0345 3.68235 14.7298 2.82457 14.7298C1.96683 14.7298 1.27148 14.0345 1.27148 13.1767C1.27148 12.3189 1.96683 11.6236 2.82457 11.6236C3.68235 11.6236 4.37769 12.3189 4.37769 13.1767Z" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_25" d="M9.55664 0.234802H10.592" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_26" d="M10.5898 12.1423H9.55444" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_27" d="M10.0732 0.234783V12.142" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_28" d="M11.4165 11.1065H10.0732" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_29" d="M10.0732 5.41174H13.6972V11.1065H12.354" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_30" d="M10.073 1.26818L14.7324 5.40985H10.073" stroke="#26234F" stroke-width="0.423186" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_31" d="M10.0742 1.27055L9.66309 1.63599" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_32" d="M8.84613 2.35989L6.23364 4.68213" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20.24 23.81"/>
+<path id="Vector_33" d="M5.82519 5.04441L5.41406 5.40985H5.96412" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_34" d="M7.21289 5.40985H8.89885" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="23.14 27.22"/>
+<path id="Vector_35" d="M9.52344 5.40985H10.0735" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_36" d="M10.0723 11.1066H9.39282" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_37" d="M8.60595 11.1065H7.52271" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="15.03 17.17"/>
+<path id="Vector_38" d="M7.12823 11.1065H6.44873V10.427" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_39" d="M6.44873 9.18939V7.48715" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="23.61 26.99"/>
+<path id="Vector_40" d="M6.44873 6.86755V6.18806" stroke="#26234F" stroke-width="0.423186" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_126_830">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

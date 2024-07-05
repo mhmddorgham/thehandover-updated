@@ -66,3 +66,29 @@ export const sidebarItems = [
     path: "/developer/notifications",
   },
 ];
+
+export const devNavLinks = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "How it works",
+    href: "/how-it-works",
+  },
+];
+
+export const developerLinks = [
+  {
+    title: "Dashboard",
+    href: "dashboard",
+  },
+  {
+    title: "Profile",
+    href: "profile",
+  },
+  {
+    title: "Active Projects",
+    href: "active-projects",
+  },
+];

@@ -1,0 +1,19 @@
+<svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_394_908" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="109" height="108">
+<g id="Group 96959">
+<rect id="Rectangle 28" y="37.7993" width="10.8" height="70.2" fill="white"/>
+<rect id="Rectangle 33" x="48.5977" y="5.39935" width="10.8" height="43.2" fill="white"/>
+<rect id="Rectangle 34" x="59.4023" y="102.601" width="10.8" height="43.2" transform="rotate(-180 59.4023 102.601)" fill="white"/>
+<rect id="Rectangle 32" x="59.4023" width="10.8" height="32.4" transform="rotate(90 59.4023 0)" fill="white"/>
+<rect id="Rectangle 35" x="48.5977" y="108" width="10.8" height="32.4" transform="rotate(-90 48.5977 108)" fill="white"/>
+<rect id="Rectangle 31" x="97.2021" width="10.8" height="75.6" fill="white"/>
+<path id="Rectangle 29" d="M27.002 0H37.802V108H27.002V0Z" fill="white"/>
+<rect id="Rectangle 30" x="70.2002" width="10.8" height="108" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_394_908)">
+<rect id="Rectangle 11428" x="-22" y="-9" width="153" height="129" fill="white" fill-opacity="0.1"/>
+</g>
+</g>
+</svg>
