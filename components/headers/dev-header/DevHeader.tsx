@@ -9,8 +9,8 @@ function DevHeader() {
   const { data: session, status } = useSession();
   const loading = status === "loading";
   return (
-    <section>
-      <div className="hidden md:block bg-white">
+    <section className="w-full">
+      <div className="hidden md:block bg-white w-full">
         {/* large screen header  */}
 
         <DevHeaderLg status={status} session={session} loading={loading} />
